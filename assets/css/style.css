@@ -1,0 +1,159 @@
+/* Start Variables */
+:root {
+  --main-color: #ffc107;
+  --secondary-color: #3c4248;
+  --third-color: #4b4e518c;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  color: var(--secondary-color);
+  transition: 0.5s;
+}
+/* End Global Rules */
+/* Start Header */
+nav .logo {
+  text-transform: uppercase;
+}
+nav a {
+  text-transform: capitalize;
+}
+/* End Header */
+/* Start Landing Section */
+.landing-text ,.about{
+  margin: 290px auto;
+  line-height: 1.8;
+  max-height: calc(100vh - 70px);
+}
+.about{
+    margin-bottom: 320px;
+}
+.landing-text h1 {
+  font-weight: 700;
+}
+.landing-text p {
+  font-size: 70px;
+  letter-spacing: 5px;
+  margin-bottom: 70px;
+}
+.btn-sub {
+  background-color: var(--main-color);
+  width: 150px;
+}
+/* End Landing Section */
+/* Start Services  */
+.services {
+  max-height: calc(100vh - 70px);
+  margin: 290px auto;
+  padding: 10px;
+  letter-spacing: 3px;
+  margin-bottom: 390px;
+}
+.services h2,
+.portofolio h2,
+.about h2,
+.contact h2 ,
+.team h2{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.services h4,
+.portofolio h5,
+.contact p,
+.team h5 {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.services p,
+.portofolio h6,
+.portofolio p,
+.about p ,
+.team p{
+  color: var(--third-color);
+  font-weight: 400;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+i {
+  margin: 25px 0;
+  background-color: var(--main-color);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding-top: 15px;
+}
+/* End Services */
+/* Start portfolio */
+section{
+      max-height: calc(100vh - 70px);
+  margin: auto;
+  gap: 30px;
+  text-transform: capitalize;
+}
+.portofolio h2 {
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+.portofolio p,
+.about p {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+/* End portfolio */
+/* Start team */
+.team{
+  margin: 290px auto;
+  text-align: center;
+  letter-spacing: 2px;
+   max-height: 100%;
+}
+.team img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+margin: 30px 0;
+}
+/* End team */
+/* Start contact */
+.contact {
+  max-height: calc(100vh - 500px);
+  margin: 300px auto;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.9;
+}
+.contact a {
+  color: var(--main-color);
+  font-weight: 900;
+  font-size: 40px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.contact a:hover{
+    text-decoration: none;
+    color: var(--third-color);
+}
+/* End contact */
+/* Start Footer */
+.footer {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 30px 10px;
+  text-align: center;
+  font-size: 18px;
+}
+.footer span {
+  font-weight: bold;
+  color: var(--main-color);
+}
+/* End Footer */
