@@ -10,11 +10,14 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  text-transform: capitalize;
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
+  overflow-x: hidden;
   font-family: "Work Sans", sans-serif;
   color: var(--secondary-color);
   transition: 0.5s;
@@ -32,7 +35,6 @@ nav a {
 .landing-text ,.about{
   margin: 290px auto;
   line-height: 1.8;
-  max-height: calc(100vh - 70px);
 }
 .about{
     margin-bottom: 320px;
@@ -52,7 +54,6 @@ nav a {
 /* End Landing Section */
 /* Start Services  */
 .services {
-  max-height: calc(100vh - 70px);
   margin: 290px auto;
   padding: 10px;
   letter-spacing: 3px;
@@ -95,7 +96,6 @@ i {
 /* End Services */
 /* Start portfolio */
 section{
-      max-height: calc(100vh - 70px);
   margin: auto;
   gap: 30px;
   text-transform: capitalize;
@@ -126,7 +126,6 @@ margin: 30px 0;
 /* End team */
 /* Start contact */
 .contact {
-  max-height: calc(100vh - 500px);
   margin: 300px auto;
   text-align: center;
   letter-spacing: 2px;
@@ -157,3 +156,24 @@ margin: 30px 0;
   color: var(--main-color);
 }
 /* End Footer */
+/* Responsive */
+@media screen and (max-width:768px) {
+  .landing-text ,.services,.about,.team,.contact{
+    margin: 100px auto; 
+  }
+  .landing-text p{
+    letter-spacing: 0px;
+    margin-bottom: 25px;
+  }
+  #serv,#port,#about,#team,#contact{
+    height: 30px !important;
+  }
+  .portofolio .row .col-4{
+    max-width: 100% !important;
+    margin-bottom: 15px;
+  }
+  .team img{
+    width: 200px;
+    height: 200px;
+  }
+}
